@@ -15,21 +15,6 @@ private:
         f.read((char *)&value, sizeof(value));
         return value;
     }
-
-    // int32_t read_i32(istream &f, size_t offset) {
-    //     int32_t value;
-    //     f.seekg(offset);
-    //     f.read((char *)&value, sizeof(value));
-    //     return value;
-    // }
-
-    // int16_t read_i16(istream &f, size_t offset) {
-    //     int16_t value;
-    //     f.seekg(offset);
-    //     f.read((char *)&value, sizeof(value));
-    //     return value;
-    // }
-
 public:
     void openBMP(const string & file_path) {
         ifstream in;
